@@ -1,11 +1,9 @@
 import { FC } from 'react';
+import { Greet } from './components/Greet';
 
 export const App: FC<{ name: string }> = ({ name }) => {
   return (
-    <div>
-      <h1>Hello {name}!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <Greet name='Josh' messageCount={10} isLoggedIn = {true}/>
   );
 };
  
